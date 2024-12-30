@@ -1,0 +1,279 @@
+/* ========== Подключение шрифтов ========== */
+@font-face {
+  font-family: 'Navigo';
+  src: url('flask/fonts/Navigo-Regular-Desktop.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('flask/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ========== Базовые стили HTML и Body ========== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ========== Темный фон и связанные стили ========== */
+.dark-bg {
+  background-color: #102D69;
+  color: #fff;
+}
+.dark-bg .navbar-toggler {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* ========== Цвета текста и элементы оформления ========== */
+.font-color-blue {
+  color: #102D69;
+}
+
+.text-blue {
+  color: #DFC7F2 !important;
+}
+
+.text-yellow {
+  color: #DCFF05 !important;
+}
+
+.text-purple {
+  color: #DFC7F2 !important;
+}
+
+.text-white-40 {
+  color: #fff !important;
+  opacity: 0.4;
+}
+
+/* ========== Ссылки ========== */
+.link-border-bottom {
+  display: inline-block;
+  padding: 0;
+  text-decoration: none;
+  line-height: 1.3;
+  border-bottom: 1px solid #6c757d;
+  transition: 0.4s ease;
+}
+.text-white.link-border-bottom {
+  border-bottom: 1px solid #fff;
+}
+.link-border-bottom:hover {
+  border-color: transparent;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  transition: 0.4s ease;
+}
+.link:hover {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: transparent;
+}
+
+.link.link-blue {
+  color: #102D69;
+  border-color: #102D69;
+}
+.link.link-blue:hover {
+  color: #102D69;
+  border-color: transparent;
+}
+
+.link.link-purple {
+  color: #DFC7F2;
+  border-color: #DFC7F2;
+}
+.link.link-purple:hover {
+  color: #DFC7F2;
+  border-color: transparent;
+}
+
+.link.link-yellow {
+  color: #DCFF05;
+  border-color: #DCFF05;
+}
+.link.link-yellow:hover {
+  color: #DCFF05;
+  border-color: transparent;
+}
+
+/* ========== Кнопки ========== */
+.btn-blue {
+  font-size: 1.15rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #102D69;
+  border-color: #102D69;
+}
+
+.btn-yellow {
+  background-color: #DCFF05;
+  color: #102D69;
+}
+.btn-yellow:hover {
+  background-color: #c4e004;
+  color: #102D69;
+}
+
+/* ========== Логотипы, заголовки, шапка сайта ========== */
+.logo:hover {
+  text-decoration: none;
+  transition: 0.4s ease;
+  opacity: 0.85;
+}
+.logo-title {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.logo-subtitle {
+  font-size: 17px;
+  line-height: 1;
+}
+.logo-right {
+  margin-left: 6px;
+}
+
+h1.greeting-text {
+  color: #DFC7F2;
+}
+
+.greeting-text {
+  color: #DFC7F2;
+  font-family: 'Navigo', sans-serif;
+  font-weight: normal;
+}
+
+.navigo-font {
+  font-family: 'Navigo', sans-serif;
+  font-weight: normal;
+}
+
+/* ========== Прочее ========== */
+.promo-text {
+  font-size: 24px;
+  opacity: 0.75;
+  font-family: 'Roboto', sans-serif;
+}
+
+.story p {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.story-link {
+  color: #102D69;
+  text-decoration: none;
+  transition: 0.4s ease;
+  border-bottom: 2px solid #102D69;
+}
+.story-link:hover {
+  color: #102D69;
+  text-decoration: none;
+  border-color: transparent;
+}
+
+.position {
+  margin-left: 20px;
+}
+
+/* ========== Тёмная тема ========== */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark a {
+  color: #80cbc4;
+  text-decoration: none;
+}
+body.dark a:hover {
+  color: #4db6ac;
+  border-color: transparent;
+}
+
+body.dark .dark-bg {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
+
+body.dark .btn-yellow {
+  background-color: #ffb74d;
+  color: #1c1c1c;
+}
+body.dark .btn-yellow:hover {
+  background-color: #ffa726;
+  color: #1c1c1c;
+}
+
+body.dark .link {
+  color: rgba(224, 224, 224, 0.8);
+  border-color: rgba(224, 224, 224, 0.8);
+}
+body.dark .link:hover {
+  color: rgba(224, 224, 224, 0.8);
+  border-color: transparent;
+}
+
+body.dark .text-purple {
+  color: #9575cd !important;
+}
+
+body.dark .text-black {
+  color: #e0e0e0 !important;
+}
+
+body.dark .navbar {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+body.dark .navbar .nav-link {
+  color: #80cbc4 !important;
+}
+body.dark .navbar .nav-link:hover {
+  color: #4db6ac !important;
+}
+
+body.dark footer {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
+
+body.dark .btn-blue {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #444444;
+}
+body.dark .btn-blue:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+body.dark h1.greeting-text,
+body.dark h2,
+body.dark h3 {
+  color: #e0e0e0;
+}
+
+body.dark .logo-title {
+  color: #e0e0e0;
+}
+body.dark .logo-subtitle {
+  color: #80cbc4;
+}
+
+body.dark .story p {
+  color: #e0e0e0;
+}
