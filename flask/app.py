@@ -155,5 +155,8 @@ def render_server_error(error):
     return "Что-то не так, но мы все починим", 500
 
 
-if __name__ == '__main__':
-    app.run(port=5002, debug=True)
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5002))  # Получить порт из переменной окружения
+    app.run(host="0.0.0.0", port=port)  # Слушать на 0.0.0.0
